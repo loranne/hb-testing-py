@@ -31,40 +31,22 @@ def most_and_least_common_type(treats):
     """Given list of treats, return most and least common treat types.
 
     Return most and least common treat types in tuple of format (most, least).
-    >>> treats1 = [{"type": "dessert"},
-        {"type": "dessert"},
-        {"type": "dessert"},
-        {"type": "appetizer"},
-        {"type": "appetizer"},
-        {"type": "drink"}
-        ]
-    >>> most_and_least_common_type(treats1)
-    ('dessert', 'drink')
-    
-    >>> treats2 = [{"type": "dessert"},
-        {"type": "dessert"},
-        {"type": "dessert"},
-        {"type": "dessert"},
-        {"type": "dessert"},
-        {"type": "dessert"}
-        ]
-    >>> most_and_least_common_type(treats2)
-    ("dessert", "dessert")
 
-    >>> treats3 = [{"type": "dessert"},
-        {"type": "dessert"},
-        {"type": "dessert"},
-        {"type": "drink"},
-        {"type": "drink"},
-        {"type": "drink"}
-        ]
-    >>> most_and_least_common_type(treats3)
-    ("dessert", "dessert")
+        >>> treats1 = [{'type': 'dessert'}, {'type': 'dessert'}, {'type': 'dessert'}, {'type': 'appetizer'}, {'type': 'appetizer'}, {'type': 'drink'}]
+        >>> most_and_least_common_type(treats1)
+        ('dessert', 'drink')
 
-    >>> treats4 = [
-        ]
-    >>> most_and_least_common_type(treats4)
-    (None, None)
+        >>> treats2 = [{'type': 'dessert'}, {'type': 'dessert'}, {'type': 'dessert'}]
+        >>> most_and_least_common_type(treats2)
+        ('dessert', 'dessert')
+
+        >>> treats3 = [{'type': 'dessert'}, {'type': 'dessert'}, {'type': 'drink'}, {'type': 'drink'}]
+        >>> most_and_least_common_type(treats3)
+        ('dessert', 'dessert')
+
+        >>> treats4 = []
+        >>> most_and_least_common_type(treats4)
+        (None, None)
     """
 
     types = {}
